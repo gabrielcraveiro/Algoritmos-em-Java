@@ -2,7 +2,7 @@
 ===================
 
 
-Vou disponibilizar aqui todos os algoritmos que fiz em java, pricipalmente para referencias futuras.
+Vou disponibilizar aqui todos os algoritmos e pequenos códigos que fiz em java, pricipalmente para referencias futuras. Eles podem não estar 100% otimizados mas todos funcionam perfeitamente.
 
 ----------
 
@@ -10,9 +10,9 @@ Vou disponibilizar aqui todos os algoritmos que fiz em java, pricipalmente para 
 ##Algoritmos
 -------------
 
-**001 - Algoritmos de Euclides / Euclidean Algorithm**
+**001 - Algoritmos de Euclides / Euclidean Algorithm (MDC)**
 
-**002 - Crivo de Eratóstenes / Sieve of Eratosthenes**
+**002 - Crivo de Eratóstenes / Sieve of Eratosthenes (Primos até 10 milhões)**
 
 **003 - Busca Binária / Binary Search**
 
@@ -25,4 +25,20 @@ Vou disponibilizar aqui todos os algoritmos que fiz em java, pricipalmente para 
 
 **006 - Fila Sequencial (Array)**
 
+##Matemática
+-------------
 
+**001 - Algoritmos de Euclides / Euclidean Algorithm (MDC)**
+
+**002 - Crivo de Eratóstenes / Sieve of Eratosthenes (Primos até 10 milhões)**
+
+**009 - Sequencia Fibonacci até n**
+
+**010 - Fatorial de n**
+
+##Recursividade
+-------------
+
+**010 - Fibonacci com Recursividade**
+
+**012 - Fatorial com Recursividade**
