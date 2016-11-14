@@ -10,12 +10,19 @@ Vou disponibilizar aqui todos os algoritmos que fiz em java, pricipalmente para 
 ##Algoritmos
 -------------
 
-**Algoritmos de Euclides / Euclidean Algorithm**
+**001 - Algoritmos de Euclides / Euclidean Algorithm**
 
-**Crivo de Eratóstenes / Sieve of Eratosthenes**
+**002 - Crivo de Eratóstenes / Sieve of Eratosthenes**
 
-**Busca Binária / Binary Search**
+**003 - Busca Binária / Binary Search**
 
-**Selection Sort / Selection Sort**
+**004 - Selection Sort / Selection Sort**
+
+##Estrutura de Dados
+-------------
+
+**005 - Pilha Sequencial (Array)**
+
+**006 - Fila Sequencial (Array)**
 
 
