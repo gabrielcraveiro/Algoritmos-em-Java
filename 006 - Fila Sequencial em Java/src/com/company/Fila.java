@@ -7,59 +7,62 @@ import java.util.Arrays;
  */
 public class Fila {
     private int fila[];
-    private int inic;
-    private int fim;
+    private int u;
+    private int p;
     private int tamanho;
+    private int qtde;
 
     public Fila(int tamanho) {
-        this.fila = new int[tamanho];
-        this.inic = -1;
-        this.fim = -1;
         this.tamanho = tamanho;
+        fila = new int[tamanho];
+        p = -1;
+        u = -1;
+        qtde = 0;
     }
 
     public void insere(int x) {
         if (filaCheia()) {
-            System.out.println("Fila cheia");
-        } else {
-            if (this.fim == this.tamanho-1) {
-                this.fim = 0;
-            } else {
-                this.fim++;
-            }
-            this.fila[this.fim] = x;
+            System.out.println("Fila Cheia");
+            return;
         }
+        u++;
+        if (u == this.tamanho) {
+            u = 0;
+        }
+        fila[u] = x;
+        qtde++;
+
     }
 
-    public int remove() {
+    public void remove() {
         if (filaVazia()) {
-            System.out.println("Fila vazia");
-            return 0;
-        } else {
-            if (this.inic == this.tamanho-1) {
-                this.inic = 0;
-            } else {
-                this.inic++;
-            }
-            return this.fila[this.inic];
+            System.out.println("Fila Vazia");
+            return;
         }
+        if (p == this.tamanho) {
+            p = 0;
+        } else {
+            p++;
+        }
+        qtde--;
     }
 
     public boolean filaVazia() {
-        return this.inic == this.fim;
+        return qtde <= 0;
     }
 
     public boolean filaCheia() {
-        return (this.fim + 1 == this.inic || this.fim == this.tamanho-1 && this.inic == -1);
+        return qtde == this.tamanho;
     }
 
     @Override
     public String toString() {
         return "Fila{" +
-                "Array: " + Arrays.toString(fila) +
-                ", inic=" + inic +
-                ", fim=" + fim +
-                ", tamanhoMaximo=" + tamanho +
+                "fila=" + Arrays.toString(fila) +
+                ", u=" + u +
+                ", p=" + p +
+                ", tamanho=" + tamanho +
+                ", qtde=" + qtde +
                 '}';
     }
 }

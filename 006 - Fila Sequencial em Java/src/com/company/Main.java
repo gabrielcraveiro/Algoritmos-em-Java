@@ -6,26 +6,31 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-        Fila fila = new Fila(10);
+        Fila fila = new Fila(3);
 
+        System.out.println("Encher a fila com 3 elementos");
+        for (int i = 1; i <= 3; i++) {
+            fila.insere(1);
+            System.out.println(fila);
+        }
+        System.out.println();
+        System.out.println("Esvaziar a fila");
+        for (int i = 1; i <= 3; i++) {
+            fila.remove();
+            System.out.println(fila);
+        }
         System.out.println(fila);
-        for (int i = 0; i < 12; i++) {
-            fila.insere(i);
+        for (int i = 1; i <= 3; i++) {
+            fila.insere(2);
             System.out.println(fila);
         }
-        System.out.println("remove");
-        for (int i = 0; i < 5; i++) {
+        System.out.println();
+        for (int i = 1; i <= 4; i++) {
             fila.remove();
             System.out.println(fila);
         }
-        System.out.println("insere 4");
-        for (int i = 0; i < 5; i++) {
-            fila.insere(i+10);
-            System.out.println(fila);
-        }
-        System.out.println("remove até pilha vazia");
-        for (int i = 0; i < 10; i++) {
-            fila.remove();
+        for (int i = 1; i <= 4; i++) {
+            fila.insere(3);
             System.out.println(fila);
         }
     }
