@@ -25,12 +25,12 @@ public class FilaLigada {
     }
 
     public int remove(){
-        int temp = inic.getInfo();
-        inic = inic.getProx();
-        if (inic == null){
+        int temp = inic.getInfo(); //Pega o dado do inicio e guarda
+        inic = inic.getProx(); //O inicio passa para o segundo(prox)
+        if (inic == null){ //Se o inicio ficar vazio, o fim também fica
             fim = null;
         }
-        return temp;
+        return temp; //Retorna o dado temporário do elemento que você retirou
 
     }
 
