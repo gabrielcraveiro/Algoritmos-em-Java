@@ -25,6 +25,16 @@ Vou disponibilizar aqui todos os algoritmos e pequenos códigos que fiz em java,
 
 **006 - Fila Sequencial (Array)**
 
+**007 - Pilha Ligada (Com Ponteiros(Node))**
+
+**008 - Fila Ligada (Com Ponteiros(Node))**
+
+**013 - Fila Dupla (Inserção com ponteiros no inicio e fim)**
+
+**014 - Árvore de Busca Binária**
+
+**015 - Árvore AVL**
+
 ##Matemática
 -------------
 
@@ -34,7 +44,7 @@ Vou disponibilizar aqui todos os algoritmos e pequenos códigos que fiz em java,
 
 **009 - Sequencia Fibonacci até n**
 
-**010 - Fatorial de n**
+**011 - Fatorial de n**
 
 ##Recursividade
 -------------
