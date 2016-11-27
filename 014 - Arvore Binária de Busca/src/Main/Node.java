@@ -1,7 +1,7 @@
 package Main;
 
 /**
- * Created by Gabriell on 26/11/2016.
+ * Created by Gabriel Craveiro on 26/11/2016.
  */
 public class Node {
     Node esquerda;
@@ -13,27 +13,4 @@ public class Node {
         direita = null;
     }
 
-    public Node getEsquerda() {
-        return esquerda;
-    }
-
-    public void setEsquerda(Node esquerda) {
-        this.esquerda = esquerda;
-    }
-
-    public Node getDireita() {
-        return direita;
-    }
-
-    public void setDireita(Node direita) {
-        this.direita = direita;
-    }
-
-    public int getInfo() {
-        return info;
-    }
-
-    public void setInfo(int info) {
-        this.info = info;
-    }
 }

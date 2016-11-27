@@ -1,7 +1,7 @@
 package Main;
 
 /**
- * Created by Gabriell on 26/11/2016.
+ * Created by Gabriel Craveiro on 26/11/2016.
  */
 public class Bst {
     private Node raiz;
@@ -40,6 +40,11 @@ public class Bst {
     public void procurar(int x) {
         Node temp = raiz;
         while(true) {
+            if (temp.esquerda == null && temp.direita == null && temp.info != x || raiz.direita == null && raiz.info < x) {
+                System.out.println("");
+                System.out.println("Valor não foi encontrado");
+                return;
+            }
             if (temp == null) {
                 System.out.println("Árvore vazia");
                 return;
@@ -49,11 +54,6 @@ public class Bst {
                 } else {
                     temp = temp.direita;
                 }
-            }
-            if (temp.esquerda == null && temp.direita == null && temp.info != x) {
-                System.out.println("");
-                System.out.println("Valor não foi encontrado");
-                return;
             }
             if (temp.info == x) {
                 System.out.println("");
@@ -74,6 +74,9 @@ public class Bst {
             mostra(root.direita);
         }
     }
+
+
+
 
 
 

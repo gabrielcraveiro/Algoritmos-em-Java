@@ -1,5 +1,6 @@
 package Main;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -36,5 +37,6 @@ public class Main {
                     System.out.println("Este não é um número válido");
             }
         }
+
     }
 }
