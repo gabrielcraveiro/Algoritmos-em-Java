@@ -31,12 +31,28 @@ public class FilaDupla {
         fim = temp; //O fim vira o node auxiliar
     }
 
+    public int removeInic() { //Remover inicio é simples, só apontar o inicio para o proximo.
+        int temp = inic.getInfo();
+        inic = inic.getProx();
+        return temp;
+    }
+
+    public int removeFim() { //Para remover o fim é necessário percorrer toda a fila até o ultimo elemento antes do fim.
+        Node aux = inic;
+        while (aux.getProx().getProx() != null){ //Se o proximo do proximo for null o aux vai ser ele, ou seja,
+            aux = aux.getProx(); //Em uma fila de 1 2 3 4 5, quando o ponteiro estiver no 4 o proximo(5) do proximo(null)
+        }                        //Vai ser null.
+        int temp = aux.getInfo();
+        fim = aux;
+        fim.setProx(null);
+        return temp;
+    }
+
     public Node getInic() {
         return inic;
     }
 
     public Node getFim() {
-
         return fim;
     }
 
