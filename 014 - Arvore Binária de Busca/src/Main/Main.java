@@ -14,7 +14,7 @@ public class Main {
         while(i == 1) {
             System.out.println("1 - Insere");
             System.out.println("2 - Procurar valor na Árvore");
-            System.out.println("3 - Mostra a Árvore");
+            System.out.println("3 - Mostrar a Árvore");
             System.out.println("9 - Sair");
             int escolha = input.nextInt();
             switch (escolha) {
