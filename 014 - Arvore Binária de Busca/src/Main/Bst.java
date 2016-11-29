@@ -15,6 +15,7 @@ public class Bst {
         temp.info = x;
         if (raiz == null) {
             raiz = temp;
+            System.out.println("Valor inserido na raiz");
             return;
         }
         Node atual = raiz;
@@ -25,29 +26,31 @@ public class Bst {
                 atual = atual.esquerda;
                 if (atual == null) {
                     parente.esquerda = temp;
+                    System.out.println("Valor inserido a esquerda");
                     return;
                 }
             } else {
                 atual = atual.direita;
                 if (atual == null) {
                     parente.direita = temp;
+                    System.out.println("Valor inserido a direita");
                     return;
                 }
             }
         }
     }
 
-    public void procurar(int x) {
+    public boolean procurar(int x) {
         Node temp = raiz;
         while(true) {
+            if (temp.info == x) {
+                return true;
+            }
             if (temp.esquerda == null && temp.direita == null && temp.info != x || raiz.direita == null && raiz.info < x) {
-                System.out.println("");
-                System.out.println("Valor não foi encontrado");
-                return;
+                return false;
             }
             if (temp == null) {
-                System.out.println("Árvore vazia");
-                return;
+                return false;
             } else {
                 if (temp.info > x) {
                     temp = temp.esquerda;
@@ -55,27 +58,60 @@ public class Bst {
                     temp = temp.direita;
                 }
             }
-            if (temp.info == x) {
-                System.out.println("");
-                System.out.println("O valor foi encontrado");
-                return;
-            }
         }
     }
 
-    public void mostra() {
-        mostra(raiz);
+    public void préOrdem() {
+        System.out.println("Pré Ordem");
+        préOrdem(raiz);
+        System.out.println("");
     }
 
-    private void mostra(Node root){
+    private void préOrdem(Node root){
         if(root!=null){
-            mostra(root.esquerda);
             System.out.print(" " + root.info);
-            mostra(root.direita);
+            préOrdem(root.esquerda);
+            préOrdem(root.direita);
         }
     }
 
+    public void emOrdem() {
+        System.out.println("Em Ordem");
+        emOrdem(raiz);
+        System.out.println("");
+    }
 
+    private void emOrdem(Node root){
+        if(root!=null){
+            emOrdem(root.esquerda);
+            System.out.print(" " + root.info);
+            emOrdem(root.direita);
+        }
+    }
+
+    public void pósOrdem() {
+        System.out.println("Pós Ordem");
+        pósOrdem(raiz);
+        System.out.println("");
+    }
+
+    private void pósOrdem(Node root){
+        if(root!=null){
+            pósOrdem(root.esquerda);
+            pósOrdem(root.direita);
+            System.out.print(" " + root.info);
+        }
+    }
+
+    public void altura() {
+        System.out.println("Altura é: "+altura(raiz));
+    }
+
+    private int altura(Node node) {
+        if (node == null) return -1;
+
+        return 1 + Math.max(altura(node.esquerda), altura(node.direita));
+    }
 
 
 
