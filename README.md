@@ -33,7 +33,10 @@ Vou disponibilizar aqui todos os algoritmos e pequenos códigos que fiz em java,
 
 **014 - Árvore de Busca Binária**
 
-**015 - Árvore AVL**
+**015 - Fila Ordenada com Node**
+
+**016 - Árvore AVL**
+
 
 ##Matemática
 -------------
