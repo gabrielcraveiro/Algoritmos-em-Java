@@ -2,7 +2,7 @@
 ===================
 
 
-Vou disponibilizar aqui todos os algoritmos e pequenos códigos que fiz em java, pricipalmente para referencias futuras. Eles podem não estar 100% otimizados mas todos funcionam perfeitamente.
+Vou disponibilizar aqui alguns algoritmos que fiz em Java
 
 ----------
 
